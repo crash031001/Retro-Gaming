@@ -1,0 +1,53 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.mando{
+    display: flex;
+}
+.footer{
+justify-content: space-evenly !important;
+align-items: center !important;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+}
+.contact{
+    font-family:Poppins;
+    font-weight: bolder;
+    font-size: 23px !important;
+    user-select: none;
+}
+.span{
+    font-family: stencil;
+    font-size: 32px;
+    font-weight: normal;
+}
+@media (max-width: 400px) {
+    .navbar-brand{
+        font-size: 24px !important;
+    }
+    .logo{
+        height: 45px;
+        width: 45px;
+        margin: 1px;
+    }
+}
+.logo-name{
+    align-items: center !important;
+}
+.navbar{
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+}
+.contact:hover{
+    opacity: 0.8;
+}

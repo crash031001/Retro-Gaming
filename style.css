@@ -1,0 +1,99 @@
+
+.vertodo{
+    display: flex;
+    justify-content: space-evenly;
+}
+.desplegable:hover{
+    opacity: 0.7;
+}
+.card{
+    background: #3d3d3d !important;
+}
+.Page{
+    background: #FFF;
+}
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.disabled{
+    opacity: 100% !important;
+}
+a{
+    user-select: none;
+}
+.alert{
+    text-align: center;
+}
+@media (max-width: 770px) {
+    .col{
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+    width: 240px;
+    height: 500px;
+    }
+
+}
+@media (max-width: 500px) {
+    .card{
+        font-size: smaller;
+    }
+    img{
+        height: 160px;
+    }
+    .card-btn{
+        font-size: normal !important;
+        scale: 0.8;
+    }
+    .navbar-brand{
+        font-size: 24px !important;
+    }
+    .logo{
+        height: 45px;
+        width: 45px;
+        margin: 1px;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    flex-direction: column;
+    justify-content: center;
+}
+.pagination{
+    justify-content: center;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+}
+.span{
+    font-family: stencil;
+    font-size: 30px;
+    font-weight: normal;
+}
+.logo-name{
+    align-items: center !important;
+}
+.footer{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    height: 40px;
+}
+.navbar{
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+}
+.contact:hover{
+    opacity: 0.8;
+}
