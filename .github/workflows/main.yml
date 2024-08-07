@@ -1,0 +1,24 @@
+    name: Build and Deploy
+
+    on:
+      push:
+        branches: [ "master" ]
+
+    jobs:
+      build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v3
+        - name: Set up PHP
+          uses: shivammathur/setup-php@v2
+          with:
+            php-version: '8.1'
+        - name: Build with PHP
+          run: php -f index.php > index.html # Adapta esta línea con el comando que necesitas para generar el HTML
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} #  Genera una clave SSH y guárdala en Secrets
+            folder: anose # Especifica la carpeta que contiene el HTML generado
+            publish_dir: ./mi-app-web # Especifica la carpeta que quieres desplegar
+    

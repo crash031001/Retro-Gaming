@@ -1,4 +1,5 @@
 <?php
+
 $precio=0;
 $modo="";
 $server = "juegos.sqlite";
@@ -106,7 +107,7 @@ $resultado = $instruccion->fetchAll();
           
         </li>
       </ul>
-      <form class="d-flex" action="index.php" method="post">
+      <form class="d-flex" action="catalogo.php" method="post">
       <select class="form-select form-select-md m-2 bg-dark text-light border-dark" aria-label="large select example" name="categ">
         <option selected value="">Categorias</option>
         <option value="shooter" <?php if($_POST)echo ($_POST['categ']=='shooter')?'selected' :'' ;?> >Shooter</option>
@@ -122,7 +123,7 @@ $resultado = $instruccion->fetchAll();
       </select>
       <button class="btn btn-outline-dark m-2" type="submit" >Filtrar</button>
       </form>
-      <form class="d-flex" action="index.php" method="post">
+      <form class="d-flex" action="catalogo.php" method="post">
         <input type="text" hidden name="categ" >
           <input type="text" hidden name="modo" >
         <input class="form-control ms-2 me-2 bg-dark text-light border-dark" type="text" placeholder="Buscar" name="buscar" aria-label="Search">
@@ -191,7 +192,7 @@ $resultado = $instruccion->fetchAll();
       <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
       <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
     </svg>
-    <a class="navbar-brand ms-2 text-dark contact" style="font-family: 'Poppins'" href="contact.php"><b>Contactanos</b></a>
+    <a class="navbar-brand ms-2 text-dark contact" style="font-family: 'Poppins'" href="index.html"><b>Contactanos</b></a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
