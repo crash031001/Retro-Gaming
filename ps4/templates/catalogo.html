@@ -1,0 +1,176 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Retro Gaming</title>
+    <link rel="icon" href="{% static 'images/logo.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+
+  <body class="bg-dark text-light d-flex">
+  <nav class="navbar navbar-expand-lg bg-warning w-100" style="z-index: 2;">
+  <div class="container-fluid">
+    <div class="logo-name d-flex">
+  <svg id="Capa_2" data-name="Capa 2" class="logo ms-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 561.72 607.46">
+    <path d="M160.74,160.1v34.99c-16.78,4.41-25.17,19.13-25.17,44.14v293.52c0,11.35,1.43,20.07,4.29,26.17,2.48,5.04,7.72,9.36,15.73,12.93v35.63c-6.1,0-11.68-.53-16.73-1.58-5.05-1.05-11.78-3.15-20.16-6.31-20.02-7.57-38.14-19.12-54.34-34.68-16.21-15.55-29.56-34.15-40.04-55.8C8.1,475.26,0,435.22,0,388.98s7.24-84.49,21.74-119.17c14.49-34.68,35.27-61.9,62.35-81.65,15.63-11.56,32.41-19.86,50.34-24.91,7.44-2.1,16.2-3.15,26.31-3.15Zm152.73,386.2c-7.63,8.41-17.78,16.98-30.46,25.7-12.68,8.72-24.65,15.61-35.89,20.65-10.3,4.41-21.69,7.99-34.18,10.72-12.49,2.73-23.5,4.1-33.03,4.1v-35.63c5.53-1.47,9.67-3.25,12.44-5.36,2.76-2.1,5.1-5.04,7.01-8.83,3.24-6.51,4.86-14.82,4.86-24.91v-92.06c0-8.2-1.43-14.08-4.29-17.65-1.34-2.1-2.67-3.41-4-3.94-1.34-.52-5.72-1.73-13.16-3.63-9.15-2.52-13.73-8.4-13.73-17.65,0-5.46,2.15-9.67,6.44-12.61,4.29-2.94,10.63-4.41,19.02-4.41h114.12c8.58,0,14.63,1.31,18.16,3.94,3.53,2.63,5.29,7.2,5.29,13.71,0,3.99-.71,7.3-2.14,9.93-1.43,2.63-4.05,5.41-7.87,8.35-3.81,2.95-6.2,5.68-7.15,8.2-.96,2.52-1.43,7.15-1.43,13.87v107.51ZM181.47,194.85v-34.75c31.08,3.15,59.35,9.77,79.37,19.23,5.91,2.95,10.48,4.41,13.73,4.41,3.05,0,5.39-.79,7.01-2.37,1.62-1.58,4.91-6.04,9.87-13.4,3.43-5.25,7.72-7.88,12.87-7.88s9.1,1.63,11.3,4.89c2.19,3.26,3.29,8.67,3.29,16.24v122.64c0,15.97-5.34,23.96-16.02,23.96-5.34,0-9.3-1.58-11.87-4.73-2.58-3.15-5.01-9.35-7.29-18.6-2.86-11.77-8.01-25.48-15.44-41.14-7.44-15.65-14.59-28.01-21.45-37.04-7.82-10.51-16.59-18.23-26.31-23.17-9.72-4.94-24.55-7.44-39.04-8.28Z" style="fill: #212529;"/>
+    <g>
+      <path d="M160.36,33.16c6.88,2.3,10.9,3.7,12.04,4.22,1.14,.52,2.35,1.72,3.6,3.6,2.5,3.34,3.75,8.66,3.75,15.95V194.85h138.89V0H171.31c-7.51,0-13.3,1.41-17.36,4.22-4.07,2.81-6.1,6.83-6.1,12.04,0,8.55,4.17,14.19,12.51,16.89Z" style="fill: #212529;"/>
+      <path d="M147.85,396.99c0,5.75,2.03,10.18,6.1,13.29,4.07,3.11,9.85,4.66,17.36,4.66h158.29c9.17,0,15.74-1.38,19.71-4.14,5.42-3.68,8.13-8.51,8.13-14.49,0-8.48-3.56-14.25-10.58-17.41H159.13c-7.49,3.16-11.28,9.16-11.28,18.1Z" style="fill: #212529;"/>
+      <path d="M556.4,356.31c-3.55-3.75-7.09-5.63-10.64-5.63-5.43,0-10.74,3.55-15.95,10.64-2.09,2.71-3.7,4.54-4.85,5.47-1.15,.94-2.56,1.41-4.22,1.41-4.38,0-6.57-3.34-6.57-10.01v-64.75c0-10.01-2.35-19.5-7.04-28.47-4.69-8.96-11.42-16.68-20.18-23.15-8.34-6.05-17.67-10.84-28-14.39-10.32-3.54-25.08-6.77-44.27-9.7,21.06-6.26,36.76-11.89,47.08-16.89,10.32-5.01,19.34-11.47,27.06-19.39,18.35-18.77,27.53-42.86,27.53-72.26,0-35.87-13.66-63.5-40.98-82.9-18.98-13.56-40.56-21.48-64.75-23.78-16.27-1.67-35.97-2.5-59.12-2.5h-8.13V34.72c13.34,3.75,22.57,8.87,27.69,15.33,5.11,6.47,7.66,16.27,7.66,29.41v82.9c0,9.39-.78,16.48-2.35,21.27-1.56,4.8-4.43,9.07-8.6,12.83-4.8,4.17-12.83,7.09-24.09,8.76v33.47c11.26,1.25,19.91,5.53,25.96,12.83,4.79,6.05,7.71,13.25,8.76,21.58,.21,1.88,.31,8.66,.31,20.33v52.55c0,28.15,7.71,50.11,23.15,65.85,15.43,15.74,36.91,23.62,64.44,23.62,13.56,0,25.34-1.52,35.35-4.54,10.01-3.03,19.29-7.98,27.84-14.86,9.17-7.3,16.84-15.59,22.99-24.87,6.15-9.28,9.23-17.15,9.23-23.62,0-3.75-1.77-7.51-5.32-11.26Z" style="fill: #212529;"/>
+    </g>
+  </svg>
+  <a class="navbar-brand ms-1 text-dark" style="font-family: 'Poppins'; font-size: 25px"><b class="retro-g">Retro Gaming</b></a>
+  </div>  
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          
+        </li>
+      </ul>
+      <form class="d-flex" action="{% url 'retro_gaming:busqueda' %}" method="get">
+      <select class="form-select form-select-md m-2 bg-dark text-light border-dark" aria-label="large select example" name="categ">
+        <option selected value="">Categorías</option>
+        <option value="shooter" >Shooter</option>
+        <option value="rpg" >RPG</option>
+        <option value="lucha" >Lucha</option>
+        <option value="carrera" >Carrera</option>
+        <option value="horror">Terror</option>
+        <option value="indie">Indie</option>
+        <option value="deportes" >Deportes</option>
+      </select>
+      <select class="form-select form-select-md m-2 bg-dark text-light border-dark" aria-label="large select example" name="modo">
+        <option selected value="">Modo</option>
+        <option value="single" >Un Jugador</option>
+        <option value="multi" >Multijugador</option>
+      </select>
+      <button class="btn btn-outline-dark m-2 filtrar" type="submit" >Filtrar</button>
+      </form>
+      <form class="d-flex" action="{% url 'retro_gaming:busqueda' %}" method="get">
+        <input type="text" hidden name="categ" >
+          <input type="text" hidden name="modo" >
+        <input class="form-control ms-2 me-2 bg-dark text-light border-dark input-buscar" type="text" placeholder="Buscar" name="query" aria-label="buscar">
+        <button class="btn btn-outline-dark buscar" type="submit" >Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<h2 class="ms-3 mt-3 subtitle contenedor">
+  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffc107" class="bi bi-trophy-fill mb-2" viewBox="0 0 16 16">
+    <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935"/>
+  </svg>
+  Premiados en The Game Awards</h2>
+<div class="slider m-3">
+	<div class="slide-track">
+    {%for game in lista%}
+    {%if game.PREMIOS != ''%}
+		<div class="slide h-100">
+      <form action="{%url 'retro_gaming:preview' %}" method="get">
+        <input type="text" hidden name="content" value="{{game.NOMBRE}}">
+        <input type="text" hidden name="categ" >
+        <input type="text" hidden name="modo" >
+			<button class="oculto" type="submit">
+      <img src="{{game.IMAGEN}}" style="border-radius: 0px;" width="200" height="270px" class="rounded" id="imagen-carrusel"></button>
+    </form>
+    </div>
+    {%endif%}
+    {%endfor%}
+
+    <!-- Duplicados -->
+    {%for game in lista%}
+    {%if game.PREMIOS != ''%}
+		<div class="slide h-100">
+      <form action="{%url 'retro_gaming:preview' %}" method="get">
+        <input type="text" hidden name="content" value="{{game.NOMBRE}}">
+        <input type="text" hidden name="categ" >
+        <input type="text" hidden name="modo" >
+			<button class="oculto" type="submit">
+        <img src="{{game.IMAGEN}}" style="border-radius: 0px;" width="200" height="270px" class="rounded" id="imagen-carrusel"></button>
+    </form>
+    </div>
+    {%endif%}
+    {%endfor%}
+  </div>
+</div>
+
+<hr width="95%" class="text-warning" style="align-self: center;">
+<div class="contenedor">
+<h2 class="ms-4 subtitle">
+  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffc107" class="bi bi-images mb-1" viewBox="0 0 16 16">
+    <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+    <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"/>
+  </svg>
+  Catálogo</h2>
+</div>
+  <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-2 row-cols-xxl-6 g-4 m-2 p-1">
+    {%for game in page_obj%}
+    <a href="{%url 'retro_gaming:preview' %}?page={{page_number}}&content={{game.NOMBRE}}" style="text-decoration: none;">
+
+    <div class="col h-100">
+      <div class="card h-100">
+        {%if game.PREMIOS != ''%}
+        <div class="trophy"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffc107" class="bi bi-trophy-fill" class="svg" viewBox="0 0 16 16">
+          <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935"/>
+        </svg></div>
+        {%endif%}
+        <img src="{{game.IMAGEN}}" loading="lazy" width="auto" height="210px" class="d-hidden " >
+        <div class="card-body cuerpo">
+          <h3 class="card-title text-warning" style="font-size: larger; font-weight: bold" name="nombre" value="">{{game.NOMBRE}}</h3>
+          <div class="vertodo">
+            <button type="button" class="btn btn-dark  card-btn disabled precio" disabled><b>
+                {%if game.PESO < '10' %}
+                $150
+                {%else%}
+                $200
+                {%endif%}
+            </b></button>
+
+          <input type="text" hidden name="content" value="{{game.NOMBRE}}">
+          <svg color="rgb(224, 223, 220)"class="ver" style=" width: 50%; height: 50%; display: inline-block; fill: rgb(224, 223, 220); flex-shrink: 0;" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g color="rgb(224, 223, 220)"><circle opacity="0.2" r="96" cy="128" cx="128"></circle><circle stroke-width="16" stroke-miterlimit="10" stroke="rgb(224, 223, 220)" fill="none" r="96" cy="128" cx="128"></circle><polyline stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)" fill="none" points="134.1 161.9 168 128 134.1 94.1"></polyline><line stroke-width="16" stroke-linejoin="round" stroke-linecap="round" stroke="rgb(224, 223, 220)" fill="none" y2="128" x2="168" y1="128" x1="88"></line></g></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+    {%endfor%}
+
+    {%if not page_obj%}
+  </div>
+
+  <div class="warning warning-warning" role="warning">No se encuentra ninguna coincidencia con su busqueda!</div>
+  {%endif%}
+</div>
+
+  <div aria-label="Page navigation">
+      <ul class="pagination d-flex mt-3">
+        {% if page_obj.has_previous %}
+        <li class="page-item"><a class="page-link text-warning border-warning rounded-start" style="background: #323232; font-weight: bold;" href="{%url 'retro_gaming:catalogo'%}">Primera</a></li>
+          <li class="page-item"><a class="page-link text-warning border-warning" style="background: #323232; font-weight: bold;" href="?page={{ page_obj.previous_page_number }}">Anterior</a></li>
+        {%endif%}
+
+              <li class="page-item"><a class="page-link border-warning" style="background: #ffc107 ;font-weight: bold; color: #323232;">Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</a></li>
+
+        {% if page_obj.has_next %}
+          <li class="page-item"><a class="page-link text-warning border-warning" style="background: #323232;font-weight: bold;" href="?page={{ page_obj.next_page_number }}">Siguiente</a></li>
+        {%endif%}
+      </ul>
+    </div>
+    <div class="bg-warning w-100 footer">
+    <a class="navbar-brand text-dark contact" style="font-family: 'Poppins'" href="{%url 'home' %}">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#212529" class="bi bi-person-badge" viewBox="0 0 16 16">
+      <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+      <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
+    </svg>
+    <b>Contáctanos</b></a>
+    </div>
+    <script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

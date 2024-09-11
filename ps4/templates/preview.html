@@ -1,0 +1,197 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Gaming</title>
+    <link rel="icon" href="{% static 'images/logo.png' %}">
+    <link rel="stylesheet" href="{% static 'css/view.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+</style>
+</head>
+<body class="bg-dark">
+<nav class="navbar navbar-expand-lg bg-warning w-100">
+  <div class="container-fluid">
+  <div class="d-flex logo-name">
+
+    {%if categ or query or modo %}
+    <a class="navbar-brand ms-2 text-dark retro" style="font-family: 'Poppins'; font-size: 25px" href="{%url 'retro_gaming:busqueda' %}?categ={{categ}}&modo={{modo}}&query={{query}}&page={{page}}"> <b><</b>
+    {%else%}
+    <a class="navbar-brand ms-2 text-dark retro" style="font-family: 'Poppins'; font-size: 25px" href="{%url 'retro_gaming:catalogo' %}?page={{page}}"> <b><</b>
+    {%endif%}
+
+      <svg id="Capa_2" data-name="Capa 2" class="logo ms-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 561.72 607.46">
+        <path d="M160.74,160.1v34.99c-16.78,4.41-25.17,19.13-25.17,44.14v293.52c0,11.35,1.43,20.07,4.29,26.17,2.48,5.04,7.72,9.36,15.73,12.93v35.63c-6.1,0-11.68-.53-16.73-1.58-5.05-1.05-11.78-3.15-20.16-6.31-20.02-7.57-38.14-19.12-54.34-34.68-16.21-15.55-29.56-34.15-40.04-55.8C8.1,475.26,0,435.22,0,388.98s7.24-84.49,21.74-119.17c14.49-34.68,35.27-61.9,62.35-81.65,15.63-11.56,32.41-19.86,50.34-24.91,7.44-2.1,16.2-3.15,26.31-3.15Zm152.73,386.2c-7.63,8.41-17.78,16.98-30.46,25.7-12.68,8.72-24.65,15.61-35.89,20.65-10.3,4.41-21.69,7.99-34.18,10.72-12.49,2.73-23.5,4.1-33.03,4.1v-35.63c5.53-1.47,9.67-3.25,12.44-5.36,2.76-2.1,5.1-5.04,7.01-8.83,3.24-6.51,4.86-14.82,4.86-24.91v-92.06c0-8.2-1.43-14.08-4.29-17.65-1.34-2.1-2.67-3.41-4-3.94-1.34-.52-5.72-1.73-13.16-3.63-9.15-2.52-13.73-8.4-13.73-17.65,0-5.46,2.15-9.67,6.44-12.61,4.29-2.94,10.63-4.41,19.02-4.41h114.12c8.58,0,14.63,1.31,18.16,3.94,3.53,2.63,5.29,7.2,5.29,13.71,0,3.99-.71,7.3-2.14,9.93-1.43,2.63-4.05,5.41-7.87,8.35-3.81,2.95-6.2,5.68-7.15,8.2-.96,2.52-1.43,7.15-1.43,13.87v107.51ZM181.47,194.85v-34.75c31.08,3.15,59.35,9.77,79.37,19.23,5.91,2.95,10.48,4.41,13.73,4.41,3.05,0,5.39-.79,7.01-2.37,1.62-1.58,4.91-6.04,9.87-13.4,3.43-5.25,7.72-7.88,12.87-7.88s9.1,1.63,11.3,4.89c2.19,3.26,3.29,8.67,3.29,16.24v122.64c0,15.97-5.34,23.96-16.02,23.96-5.34,0-9.3-1.58-11.87-4.73-2.58-3.15-5.01-9.35-7.29-18.6-2.86-11.77-8.01-25.48-15.44-41.14-7.44-15.65-14.59-28.01-21.45-37.04-7.82-10.51-16.59-18.23-26.31-23.17-9.72-4.94-24.55-7.44-39.04-8.28Z" style="fill: #212529;"/>
+        <g>
+          <path d="M160.36,33.16c6.88,2.3,10.9,3.7,12.04,4.22,1.14,.52,2.35,1.72,3.6,3.6,2.5,3.34,3.75,8.66,3.75,15.95V194.85h138.89V0H171.31c-7.51,0-13.3,1.41-17.36,4.22-4.07,2.81-6.1,6.83-6.1,12.04,0,8.55,4.17,14.19,12.51,16.89Z" style="fill: #212529;"/>
+          <path d="M147.85,396.99c0,5.75,2.03,10.18,6.1,13.29,4.07,3.11,9.85,4.66,17.36,4.66h158.29c9.17,0,15.74-1.38,19.71-4.14,5.42-3.68,8.13-8.51,8.13-14.49,0-8.48-3.56-14.25-10.58-17.41H159.13c-7.49,3.16-11.28,9.16-11.28,18.1Z" style="fill: #212529;"/>
+          <path d="M556.4,356.31c-3.55-3.75-7.09-5.63-10.64-5.63-5.43,0-10.74,3.55-15.95,10.64-2.09,2.71-3.7,4.54-4.85,5.47-1.15,.94-2.56,1.41-4.22,1.41-4.38,0-6.57-3.34-6.57-10.01v-64.75c0-10.01-2.35-19.5-7.04-28.47-4.69-8.96-11.42-16.68-20.18-23.15-8.34-6.05-17.67-10.84-28-14.39-10.32-3.54-25.08-6.77-44.27-9.7,21.06-6.26,36.76-11.89,47.08-16.89,10.32-5.01,19.34-11.47,27.06-19.39,18.35-18.77,27.53-42.86,27.53-72.26,0-35.87-13.66-63.5-40.98-82.9-18.98-13.56-40.56-21.48-64.75-23.78-16.27-1.67-35.97-2.5-59.12-2.5h-8.13V34.72c13.34,3.75,22.57,8.87,27.69,15.33,5.11,6.47,7.66,16.27,7.66,29.41v82.9c0,9.39-.78,16.48-2.35,21.27-1.56,4.8-4.43,9.07-8.6,12.83-4.8,4.17-12.83,7.09-24.09,8.76v33.47c11.26,1.25,19.91,5.53,25.96,12.83,4.79,6.05,7.71,13.25,8.76,21.58,.21,1.88,.31,8.66,.31,20.33v52.55c0,28.15,7.71,50.11,23.15,65.85,15.43,15.74,36.91,23.62,64.44,23.62,13.56,0,25.34-1.52,35.35-4.54,10.01-3.03,19.29-7.98,27.84-14.86,9.17-7.3,16.84-15.59,22.99-24.87,6.15-9.28,9.23-17.15,9.23-23.62,0-3.75-1.77-7.51-5.32-11.26Z" style="fill: #212529;"/>
+        </g>
+      </svg>
+      <b>Retro Gaming</b>
+    </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          
+        </li>
+      </ul>
+      <form class="d-flex" action="{% url 'retro_gaming:busqueda' %}" method="get">
+      <select class="form-select form-select-md m-2 bg-dark text-light border-dark" aria-label="large select example" name="categ">
+        <option selected value="">Categorias</option>
+        <option value="shooter" >Shooter</option>
+        <option value="rpg" >RPG</option>
+        <option value="lucha" >Lucha</option>
+        <option value="carrera" >Carrera</option>
+        <option value="deportes" >Deportes</option>
+      </select>
+      <select class="form-select form-select-md m-2 bg-dark text-light border-dark" aria-label="large select example" name="modo">
+        <option selected value="">Modo</option>
+        <option value="single" >Un Jugador</option>
+        <option value="multi" >Multijugador</option>
+      </select>
+      <button class="btn btn-outline-dark m-2" type="submit" >Filtrar</button>
+      </form>
+      <form class="d-flex" action="{% url 'retro_gaming:busqueda' %}" method="get">
+        <input type="text" hidden name="categ" >
+          <input type="text" hidden name="modo" >
+        <input class="form-control ms-2 me-2 bg-dark text-light border-dark" type="text" placeholder="Buscar" name="query" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit" >Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<div class="card m-4 bg-dark">
+  <div class="row g-1>">
+    <div class="col-md-4">
+      <div class="foto">
+      <img src="{{juego.IMAGEN}}" class="img-fluid foto w-100" style="height: 30rem">
+    </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title text-warning" style="font-size: 30px;text-align: center;font-weight: bold; margin-top: -8px;">{{juego.NOMBRE}}</h5>
+        <hr class="text-warning">
+        <h4><b class='text-warning'>Descripción:<br></b></h4>
+        <p class="card-text text-light">{{juego.DESCRIPCION}}</p>
+        <hr class="text-warning">
+        <div class="mando m-3 row row-cols-xl-2 row-cols-md-2 row-cols-sm-2 row-cols-1">
+          
+        <div class="col d-flex">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-controller" viewBox="0 0 16 16">
+            <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
+            <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/>
+          </svg>
+          <p class="card-text text-light ms-2" style="font-size: medium">
+            {% if juego.CANT_JUGADORES == '1' %}
+            1 Jugador
+            {%else%}
+            1-{{juego.CANT_JUGADORES}} Jugadores
+            {%endif%}
+          </p>
+          </div>
+          
+          <div class="col d-flex mt-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-card-list" viewBox="0 0 16 16">
+            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+            <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+          </svg>
+          <p class="card-text text-light ms-2 " style="font-size: medium">{{juego.GENERO}}</p>
+          </div>
+
+          <div class="col d-flex mt-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-coin" viewBox="0 0 16 16">
+          <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z"/>
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+        </svg>
+        <p class="card-text text-light ms-2 " style="font-size: medium">
+          {%if juego.PESO < '10' %}
+          $150 CUP
+          {%else%}
+          $200 CUP
+          {%endif%}
+        </p>
+          </div>
+
+          <div class="col d-flex mt-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z"/>
+          </svg>
+          <p class="card-text text-light ms-2 " style="font-size: medium">{{juego.PESO}} Gb</p>
+          </div>
+
+          <div class="col d-flex mt-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-calendar" viewBox="0 0 16 16">
+          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+        </svg>
+          <p class="card-text text-light ms-2" >{{juego.FECHA}}</p>
+        </div>
+
+        <div class="col d-flex mt-3">
+          <svg id="layer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.5 135.5" width="25px">
+            <path id="Fill-1" d="M135.5,67.5c0,37.4-30.6,68-68,68S0,104.9,0,67.5,30.1,0,67.5,0s68,30.6,68,67.5" style="fill: white;"/>
+            <path id="Fill-4" d="M122.2,67.5c0,30.1-24.2,54.3-54.3,54.3S13.6,97.6,13.6,67.5,37.8,13.2,67.9,13.2s54.3,24.2,54.3,54.3" style="fill: #333;"/>
+            <path id="Fill-6" d="M32.3,86.2c-4.6-4.6-8.7-8.7-12.3-11.9l10-10,5.5,4.6,.5-.5c-.9-3.7-1.4-10.5,5-16.9,5-5,11.4-6.4,16.9-3.7h0c-.5-3.7-.5-6.8,.5-9.6,.9-3.2,2.7-6.4,5.5-9.1,7.3-7.3,17.8-7.8,29.2,3.7l22.4,22.4-11.4,11.4-20.5-20.5c-5.5-5.5-10.5-6.8-14.1-3.2-2.7,2.7-2.7,6.4-1.4,9.6,.5,.9,1.8,2.3,2.7,3.2l22.4,22.4-11.6,11.3-21-21c-4.6-4.6-9.6-6.4-13.7-2.3-3.2,3.2-2.3,7.3-1.4,9.6,.5,1.4,1.4,2.3,2.7,3.7l21.9,21.9-11.4,11.4-26.4-26.5Z" style="fill: #fefefe;"/>
+          </svg>
+          <p class="card-text text-light ms-2">Calificación: 
+            <b>
+              {%if juego.rating == 'tbd'%}
+              N/A
+              {%else%}
+              {{juego.rating}}/100
+              {%endif%}
+          </b>
+          </p>
+        </div>
+
+        </div>
+        {%if juego.PREMIOS != ''%}
+        <hr class="text-warning">
+        <div class="contenedor d-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffc107" class="bi bi-trophy-fill ms-4" viewBox="0 0 16 16">
+          <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935"/>
+        </svg>
+        <h5 class="text-warning ms-2">Premios:</h5>
+        </div>
+        <ul class="row row-cols-md-3 row-cols-lg-3 row-cols-1 row-cols-sm-2">
+          {%for premio in premios%}
+          <li class="text-light col" style="font-size: small;">{{premio}}</li>
+          {%endfor%}
+        </ul>
+        {%endif%}
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="navbar d-flex footer w-100 bg-warning">
+  <div class="d-flex">
+    <div class="d-flex">
+<a class="contact navbar-brand" href="{%url 'home' %}">
+  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#212529" class="bi bi-person-badge mb-1" viewBox="0 0 16 16">
+    <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+    <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
+  </svg>
+  <b>
+  Contáctanos
+</b></a>
+</div>
+
+
+
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
