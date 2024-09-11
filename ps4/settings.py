@@ -26,7 +26,7 @@ SECRET_KEY = f"{os.environ.get('SECRET_KEY')}"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://retro-gaming-6fa2.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
