@@ -1,6 +1,9 @@
 body{
     overflow-y: hidden;
+    height: auto;
+    width: auto;
     background: #fff !important;
+    overflow-x: hidden !important;
 }
 .container{
     display: flex;
@@ -46,11 +49,13 @@ span{
 }
 .dropdown-menu{
     border: 1px solid #ffc107 !important;
+    width: auto !important;
 }
 .dropdown-item:hover{
     transition: all 0.7s;
     background: #ffc107 !important;
     color: #212529 !important;
+    width: 100px !important;
 }
 .navbar-brand:hover{
     opacity: 0.8;
@@ -59,18 +64,18 @@ span{
     opacity: 0.8;
 }
 .elements{
-    justify-content: end;
-    flex-direction: row !important;
+    width: auto;
+    justify-content: start;
 }
 @media (max-width: 650px) {
     .nav-link{
-        font-size: 15px !important;
+        font-size: 20px !important;
     }
     .elements{
         justify-content: end !important;
     }
     img{
-        width: 120% !important;
+        width: 190% !important;
     }
 }
 @media (max-width:550px) {
@@ -84,7 +89,7 @@ span{
         justify-content: space-evenly !important;
     }
     .nav-link{
-        font-size: 12px !important;
+        font-size: 20px !important;
     }
 }
 @media (max-width: 400px) {
