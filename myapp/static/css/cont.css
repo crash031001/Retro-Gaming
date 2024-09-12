@@ -65,7 +65,7 @@ span{
 }
 .elements{
     width: auto;
-    justify-content: start;
+    justify-content: end;
 }
 @media (max-width: 650px) {
     .nav-link{
